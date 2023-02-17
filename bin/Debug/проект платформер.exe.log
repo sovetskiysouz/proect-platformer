@@ -1,0 +1,1583 @@
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13678, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {1.67772e+007, 0, 1.67773e+007, 50} не полностью лежит внутри изображения-источника {0, 0, 50, 50}, функция txTransparentBlt() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x2B54 (Main), GetLastError(): 13 (Недопустимые данные). 
+From: d:\codeblocks\mingw\include\txlib.h (13677) bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004228EC in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txTransparentBlt() at d:/codeblocks/mingw/include/txlib.h (13678)
+
+# 1 0x0042BB45 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/платформер/проект платформер/main.cpp (15):
+
+     13:     {
+     14:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   15:     txTransparentBlt (txDC(), 0, 0, 50, 50,mario,TX_WHITE);
+     16: 
+     17: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\codeblocks\mingw\include\txlib.h (13677):
+
+  13675:         {
+  13676: $       SetLastError (ERROR_INVALID_DATA);
+=>13677: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13678:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13679:         }
+
+# 1 in int main() at D:\платформер\проект платформер\main.cpp (15):
+
+     13:     {
+     14:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   15:     txTransparentBlt (txDC(), 0, 0, 50, 50,mario,TX_WHITE);
+     16: 
+     17: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 12 2023 17:28:13, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 12 2023 17:28:19
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13678, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {1.67772e+007, 0, 1.67773e+007, 50} не полностью лежит внутри изображения-источника {0, 0, 50, 50}, функция txTransparentBlt() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x22BC (Main), GetLastError(): 13 (Недопустимые данные). 
+From: d:\codeblocks\mingw\include\txlib.h (13677) bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004228EC in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txTransparentBlt() at d:/codeblocks/mingw/include/txlib.h (13678)
+
+# 1 0x0042BB45 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/платформер/проект платформер/main.cpp (15):
+
+     13:     {
+     14:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   15:     txTransparentBlt (txDC(), 0, 0, 50, 50,mario,TX_WHITE);
+     16: 
+     17: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\codeblocks\mingw\include\txlib.h (13677):
+
+  13675:         {
+  13676: $       SetLastError (ERROR_INVALID_DATA);
+=>13677: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13678:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13679:         }
+
+# 1 in int main() at D:\платформер\проект платформер\main.cpp (15):
+
+     13:     {
+     14:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   15:     txTransparentBlt (txDC(), 0, 0, 50, 50,mario,TX_WHITE);
+     16: 
+     17: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 12 2023 17:28:47, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 12 2023 17:28:53
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13678, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {1.67772e+007, 0, 1.67773e+007, 50} не полностью лежит внутри изображения-источника {0, 0, 50, 50}, функция txTransparentBlt() работать не будет.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x22BC (Main), GetLastError(): 13 (Недопустимые данные). 
+From: d:\codeblocks\mingw\include\txlib.h (13677) bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004228EC in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txTransparentBlt() at d:/codeblocks/mingw/include/txlib.h (13678)
+
+# 1 0x0042BB45 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/платформер/проект платформер/main.cpp (15):
+
+     13:     {
+     14:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   15:     txTransparentBlt (txDC(), 0, 0, 50, 50,mario,TX_WHITE);
+     16: 
+     17: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\codeblocks\mingw\include\txlib.h (13677):
+
+  13675:         {
+  13676: $       SetLastError (ERROR_INVALID_DATA);
+=>13677: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13678:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13679:         }
+
+# 1 in int main() at D:\платформер\проект платформер\main.cpp (15):
+
+     13:     {
+     14:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   15:     txTransparentBlt (txDC(), 0, 0, 50, 50,mario,TX_WHITE);
+     16: 
+     17: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 12 2023 17:28:47, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 12 2023 17:28:53
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13678, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {1.67772e+007, 0, 1.67773e+007, 50} не полностью лежит внутри изображения-источника {0, 0, 50, 50}, функция txTransparentBlt() работать не будет.
+
+#3: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x22BC (Main), GetLastError(): 13 (Недопустимые данные). 
+From: d:\codeblocks\mingw\include\txlib.h (13677) bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004228EC in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txTransparentBlt() at d:/codeblocks/mingw/include/txlib.h (13678)
+
+# 1 0x0042BB45 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/платформер/проект платформер/main.cpp (15):
+
+     13:     {
+     14:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   15:     txTransparentBlt (txDC(), 0, 0, 50, 50,mario,TX_WHITE);
+     16: 
+     17: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\codeblocks\mingw\include\txlib.h (13677):
+
+  13675:         {
+  13676: $       SetLastError (ERROR_INVALID_DATA);
+=>13677: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13678:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13679:         }
+
+# 1 in int main() at D:\платформер\проект платформер\main.cpp (15):
+
+     13:     {
+     14:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   15:     txTransparentBlt (txDC(), 0, 0, 50, 50,mario,TX_WHITE);
+     16: 
+     17: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 12 2023 17:28:47, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 12 2023 17:28:53
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13678, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {1.67772e+007, 0, 1.67773e+007, 50} не полностью лежит внутри изображения-источника {0, 0, 50, 50}, функция txTransparentBlt() работать не будет.
+
+#4: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x22BC (Main), GetLastError(): 13 (Недопустимые данные). 
+From: d:\codeblocks\mingw\include\txlib.h (13677) bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004228EC in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txTransparentBlt() at d:/codeblocks/mingw/include/txlib.h (13678)
+
+# 1 0x0042BB45 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/платформер/проект платформер/main.cpp (15):
+
+     13:     {
+     14:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   15:     txTransparentBlt (txDC(), 0, 0, 50, 50,mario,TX_WHITE);
+     16: 
+     17: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\codeblocks\mingw\include\txlib.h (13677):
+
+  13675:         {
+  13676: $       SetLastError (ERROR_INVALID_DATA);
+=>13677: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13678:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13679:         }
+
+# 1 in int main() at D:\платформер\проект платформер\main.cpp (15):
+
+     13:     {
+     14:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   15:     txTransparentBlt (txDC(), 0, 0, 50, 50,mario,TX_WHITE);
+     16: 
+     17: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 12 2023 17:28:47, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 12 2023 17:28:54
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13678, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {1.67772e+007, 0, 1.67773e+007, 50} не полностью лежит внутри изображения-источника {0, 0, 50, 50}, функция txTransparentBlt() работать не будет.
+
+#5: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x22BC (Main), GetLastError(): 13 (Недопустимые данные). 
+From: d:\codeblocks\mingw\include\txlib.h (13677) bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004228EC in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txTransparentBlt() at d:/codeblocks/mingw/include/txlib.h (13678)
+
+# 1 0x0042BB45 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/платформер/проект платформер/main.cpp (15):
+
+     13:     {
+     14:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   15:     txTransparentBlt (txDC(), 0, 0, 50, 50,mario,TX_WHITE);
+     16: 
+     17: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\codeblocks\mingw\include\txlib.h (13677):
+
+  13675:         {
+  13676: $       SetLastError (ERROR_INVALID_DATA);
+=>13677: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13678:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13679:         }
+
+# 1 in int main() at D:\платформер\проект платформер\main.cpp (15):
+
+     13:     {
+     14:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   15:     txTransparentBlt (txDC(), 0, 0, 50, 50,mario,TX_WHITE);
+     16: 
+     17: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 12 2023 17:28:47, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 12 2023 17:28:53
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13678, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {1.67772e+007, 0, 1.67773e+007, 50} не полностью лежит внутри изображения-источника {0, 0, 50, 50}, функция txTransparentBlt() работать не будет.
+
+#6: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x22BC (Main), GetLastError(): 13 (Недопустимые данные). 
+From: d:\codeblocks\mingw\include\txlib.h (13677) bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004228EC in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txTransparentBlt() at d:/codeblocks/mingw/include/txlib.h (13678)
+
+# 1 0x0042BB45 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/платформер/проект платформер/main.cpp (15):
+
+     13:     {
+     14:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   15:     txTransparentBlt (txDC(), 0, 0, 50, 50,mario,TX_WHITE);
+     16: 
+     17: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\codeblocks\mingw\include\txlib.h (13677):
+
+  13675:         {
+  13676: $       SetLastError (ERROR_INVALID_DATA);
+=>13677: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13678:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13679:         }
+
+# 1 in int main() at D:\платформер\проект платформер\main.cpp (15):
+
+     13:     {
+     14:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   15:     txTransparentBlt (txDC(), 0, 0, 50, 50,mario,TX_WHITE);
+     16: 
+     17: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 12 2023 17:28:47, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 12 2023 17:28:53
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13678, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {1.67772e+007, 0, 1.67773e+007, 50} не полностью лежит внутри изображения-источника {0, 0, 50, 50}, функция txTransparentBlt() работать не будет.
+
+#7: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x22BC (Main), GetLastError(): 13 (Недопустимые данные). 
+From: d:\codeblocks\mingw\include\txlib.h (13677) bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004228EC in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txTransparentBlt() at d:/codeblocks/mingw/include/txlib.h (13678)
+
+# 1 0x0042BB45 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/платформер/проект платформер/main.cpp (15):
+
+     13:     {
+     14:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   15:     txTransparentBlt (txDC(), 0, 0, 50, 50,mario,TX_WHITE);
+     16: 
+     17: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\codeblocks\mingw\include\txlib.h (13677):
+
+  13675:         {
+  13676: $       SetLastError (ERROR_INVALID_DATA);
+=>13677: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13678:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13679:         }
+
+# 1 in int main() at D:\платформер\проект платформер\main.cpp (15):
+
+     13:     {
+     14:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   15:     txTransparentBlt (txDC(), 0, 0, 50, 50,mario,TX_WHITE);
+     16: 
+     17: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 12 2023 17:28:47, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 12 2023 17:28:53
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13678, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {1.67772e+007, 0, 1.67773e+007, 50} не полностью лежит внутри изображения-источника {0, 0, 50, 50}, функция txTransparentBlt() работать не будет.
+
+#8: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x22BC (Main), GetLastError(): 13 (Недопустимые данные). 
+From: d:\codeblocks\mingw\include\txlib.h (13677) bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004228EC in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txTransparentBlt() at d:/codeblocks/mingw/include/txlib.h (13678)
+
+# 1 0x0042BB45 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/платформер/проект платформер/main.cpp (15):
+
+     13:     {
+     14:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   15:     txTransparentBlt (txDC(), 0, 0, 50, 50,mario,TX_WHITE);
+     16: 
+     17: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\codeblocks\mingw\include\txlib.h (13677):
+
+  13675:         {
+  13676: $       SetLastError (ERROR_INVALID_DATA);
+=>13677: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13678:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13679:         }
+
+# 1 in int main() at D:\платформер\проект платформер\main.cpp (15):
+
+     13:     {
+     14:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   15:     txTransparentBlt (txDC(), 0, 0, 50, 50,mario,TX_WHITE);
+     16: 
+     17: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 12 2023 17:28:47, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 12 2023 17:28:54
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13678, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {1.67772e+007, 0, 1.67773e+007, 50} не полностью лежит внутри изображения-источника {0, 0, 50, 50}, функция txTransparentBlt() работать не будет.
+
+#9: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x22BC (Main), GetLastError(): 13 (Недопустимые данные). 
+From: d:\codeblocks\mingw\include\txlib.h (13677) bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004228EC in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txTransparentBlt() at d:/codeblocks/mingw/include/txlib.h (13678)
+
+# 1 0x0042BB45 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/платформер/проект платформер/main.cpp (15):
+
+     13:     {
+     14:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   15:     txTransparentBlt (txDC(), 0, 0, 50, 50,mario,TX_WHITE);
+     16: 
+     17: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\codeblocks\mingw\include\txlib.h (13677):
+
+  13675:         {
+  13676: $       SetLastError (ERROR_INVALID_DATA);
+=>13677: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13678:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13679:         }
+
+# 1 in int main() at D:\платформер\проект платформер\main.cpp (15):
+
+     13:     {
+     14:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   15:     txTransparentBlt (txDC(), 0, 0, 50, 50,mario,TX_WHITE);
+     16: 
+     17: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 12 2023 17:28:47, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 12 2023 17:28:53
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13678, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {1.67772e+007, 0, 1.67773e+007, 50} не полностью лежит внутри изображения-источника {0, 0, 50, 50}, функция txTransparentBlt() работать не будет.
+
+#10: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x22BC (Main), GetLastError(): 13 (Недопустимые данные). 
+From: d:\codeblocks\mingw\include\txlib.h (13677) bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004228EC in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txTransparentBlt() at d:/codeblocks/mingw/include/txlib.h (13678)
+
+# 1 0x0042BB45 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/платформер/проект платформер/main.cpp (15):
+
+     13:     {
+     14:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   15:     txTransparentBlt (txDC(), 0, 0, 50, 50,mario,TX_WHITE);
+     16: 
+     17: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\codeblocks\mingw\include\txlib.h (13677):
+
+  13675:         {
+  13676: $       SetLastError (ERROR_INVALID_DATA);
+=>13677: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13678:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13679:         }
+
+# 1 in int main() at D:\платформер\проект платформер\main.cpp (15):
+
+     13:     {
+     14:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   15:     txTransparentBlt (txDC(), 0, 0, 50, 50,mario,TX_WHITE);
+     16: 
+     17: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 12 2023 17:28:47, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 12 2023 17:28:53
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13678, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {0, 0, 362, 466} не полностью лежит внутри изображения-источника {0, 0, 50, 50}, функция txTransparentBlt() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0xF7C (Main), GetLastError(): 13 (Недопустимые данные). 
+From: d:\codeblocks\mingw\include\txlib.h (13677) bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004228EC in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txTransparentBlt() at d:/codeblocks/mingw/include/txlib.h (13678)
+
+# 1 0x0042BC7C in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/платформер/проект платформер/main.cpp (16):
+
+     14:     txBegin();
+     15:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   16:     txTransparentBlt (txDC(), 312, 416, 362, 466,mario);
+     17: 
+     18: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\codeblocks\mingw\include\txlib.h (13677):
+
+  13675:         {
+  13676: $       SetLastError (ERROR_INVALID_DATA);
+=>13677: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13678:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13679:         }
+
+# 1 in int main() at D:\платформер\проект платформер\main.cpp (16):
+
+     14:     txBegin();
+     15:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   16:     txTransparentBlt (txDC(), 312, 416, 362, 466,mario);
+     17: 
+     18: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 13 2023 16:36:43, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 13 2023 16:36:49
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13678, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {1.67772e+007, 0, 1.67776e+007, 466} не полностью лежит внутри изображения-источника {0, 0, 50, 50}, функция txTransparentBlt() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0xC68 (Main), GetLastError(): 13 (Недопустимые данные). 
+From: d:\codeblocks\mingw\include\txlib.h (13677) bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004228EC in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txTransparentBlt() at d:/codeblocks/mingw/include/txlib.h (13678)
+
+# 1 0x0042BC90 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/платформер/проект платформер/main.cpp (17):
+
+     15:     txBegin();
+     16:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   17:     txTransparentBlt (txDC(), 312, 416, 362, 466,mario,TX_WHITE);
+     18: 
+     19: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\codeblocks\mingw\include\txlib.h (13677):
+
+  13675:         {
+  13676: $       SetLastError (ERROR_INVALID_DATA);
+=>13677: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13678:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13679:         }
+
+# 1 in int main() at D:\платформер\проект платформер\main.cpp (17):
+
+     15:     txBegin();
+     16:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   17:     txTransparentBlt (txDC(), 312, 416, 362, 466,mario,TX_WHITE);
+     18: 
+     19: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 13 2023 16:43:53, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 13 2023 16:43:59
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13678, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {0, 0, 362, 466} не полностью лежит внутри изображения-источника {0, 0, 50, 50}, функция txTransparentBlt() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x2658 (Main), GetLastError(): 13 (Недопустимые данные). 
+From: d:\codeblocks\mingw\include\txlib.h (13677) bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004228EC in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txTransparentBlt() at d:/codeblocks/mingw/include/txlib.h (13678)
+
+# 1 0x0042BC8C in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/платформер/проект платформер/main.cpp (17):
+
+     15:     txBegin();
+     16:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   17:     txTransparentBlt (txDC(), 312, 416, 362, 466,mario, 0, 0,TX_WHITE);
+     18: 
+     19: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\codeblocks\mingw\include\txlib.h (13677):
+
+  13675:         {
+  13676: $       SetLastError (ERROR_INVALID_DATA);
+=>13677: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13678:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13679:         }
+
+# 1 in int main() at D:\платформер\проект платформер\main.cpp (17):
+
+     15:     txBegin();
+     16:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   17:     txTransparentBlt (txDC(), 312, 416, 362, 466,mario, 0, 0,TX_WHITE);
+     18: 
+     19: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 13 2023 16:46:04, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 13 2023 16:46:11
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13678, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {0, 0, 362, 466} не полностью лежит внутри изображения-источника {0, 0, 50, 50}, функция txTransparentBlt() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x1EBC (Main), GetLastError(): 13 (Недопустимые данные). 
+From: d:\codeblocks\mingw\include\txlib.h (13677) bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004228EC in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txTransparentBlt() at d:/codeblocks/mingw/include/txlib.h (13678)
+
+# 1 0x0042BC8C in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/платформер/проект платформер/main.cpp (17):
+
+     15:     txBegin();
+     16:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   17:     txTransparentBlt (txDC(), 312, 416, 362, 466,mario, 0, 0,TX_WHITE);
+     18: 
+     19: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\codeblocks\mingw\include\txlib.h (13677):
+
+  13675:         {
+  13676: $       SetLastError (ERROR_INVALID_DATA);
+=>13677: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13678:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13679:         }
+
+# 1 in int main() at D:\платформер\проект платформер\main.cpp (17):
+
+     15:     txBegin();
+     16:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   17:     txTransparentBlt (txDC(), 312, 416, 362, 466,mario, 0, 0,TX_WHITE);
+     18: 
+     19: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 13 2023 16:46:04, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 13 2023 16:47:46
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13678, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {0, 0, 362, 366} не полностью лежит внутри изображения-источника {0, 0, 50, 50}, функция txTransparentBlt() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x5D8 (Main), GetLastError(): 13 (Недопустимые данные). 
+From: d:\codeblocks\mingw\include\txlib.h (13677) bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004228EC in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txTransparentBlt() at d:/codeblocks/mingw/include/txlib.h (13678)
+
+# 1 0x0042BC8C in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/платформер/проект платформер/main.cpp (17):
+
+     15:     txBegin();
+     16:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   17:     txTransparentBlt (txDC(), 312, 416, 362, 366,mario, 0, 0,TX_WHITE);
+     18: 
+     19: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\codeblocks\mingw\include\txlib.h (13677):
+
+  13675:         {
+  13676: $       SetLastError (ERROR_INVALID_DATA);
+=>13677: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13678:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13679:         }
+
+# 1 in int main() at D:\платформер\проект платформер\main.cpp (17):
+
+     15:     txBegin();
+     16:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   17:     txTransparentBlt (txDC(), 312, 416, 362, 366,mario, 0, 0,TX_WHITE);
+     18: 
+     19: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 13 2023 16:57:06, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 13 2023 16:57:13
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13678, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {0, 0, 362, 366} не полностью лежит внутри изображения-источника {0, 0, 50, 50}, функция txTransparentBlt() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x650 (Main), GetLastError(): 13 (Недопустимые данные). 
+From: d:\codeblocks\mingw\include\txlib.h (13677) bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004228EC in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txTransparentBlt() at d:/codeblocks/mingw/include/txlib.h (13678)
+
+# 1 0x0042BC8C in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/платформер/проект платформер/main.cpp (17):
+
+     15:     txBegin();
+     16:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   17:     txTransparentBlt (txDC(), 312, 416, 362, 366,mario, 0, 0,TX_WHITE);
+     18: 
+     19: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\codeblocks\mingw\include\txlib.h (13677):
+
+  13675:         {
+  13676: $       SetLastError (ERROR_INVALID_DATA);
+=>13677: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13678:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13679:         }
+
+# 1 in int main() at D:\платформер\проект платформер\main.cpp (17):
+
+     15:     txBegin();
+     16:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   17:     txTransparentBlt (txDC(), 312, 416, 362, 366,mario, 0, 0,TX_WHITE);
+     18: 
+     19: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 13 2023 17:03:34, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 13 2023 17:03:40
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13628, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x23AC (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004221C3 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txBitBlt() at d:/codeblocks/mingw/include/txlib.h (13628)
+
+# 1 0x0042BF56 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/Game-main/main.cpp (81):
+
+     79: 
+     80:         //Рисование
+=>   81:         txBitBlt (txDC(), xFon, yFon, 3600, 2400, background);
+     82: 
+     83:         drawSpaceman(spaceman);
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int) at d:\codeblocks\mingw\include\txlib.h (13628):
+
+  13626:     {
+  13627: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13628: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13629: 
+  13630: $   POINT size = txGetExtent (sourceImage);
+
+# 1 in int main() at D:\Game-main\main.cpp (81):
+
+     79: 
+     80:         //Рисование
+=>   81:         txBitBlt (txDC(), xFon, yFon, 3600, 2400, background);
+     82: 
+     83:         drawSpaceman(spaceman);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 13 2023 17:17:43, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 13 2023 17:17:49
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 14245, функция: intptr_t {anonymous}::TX::txPlayVideo(int, int, int, int, const char*, double, double, HWND),
+
+Сообщение: Возможно, окно рисования не создано или не в порядке.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdre0, Thread: 0x23AC (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004267BA in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txPlayVideo() at d:/codeblocks/mingw/include/txlib.h (14245)
+# 1 0x00427969 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txPlayVideo() at d:/codeblocks/mingw/include/txlib.h (14397)
+# 2 0x0040570B in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: _txCleanup() at d:/codeblocks/mingw/include/txlib.h (9082)
+# 3 0x0041ABFE in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: _txProcessError() at d:/codeblocks/mingw/include/txlib.h (12611)
+# 4 0x00410D90 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: _txError() at d:/codeblocks/mingw/include/txlib.h (10906)
+# 5 0x004221C3 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txBitBlt() at d:/codeblocks/mingw/include/txlib.h (13628)
+
+# 6 0x0042BF56 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/Game-main/main.cpp (81):
+
+     79: 
+     80:         //Рисование
+=>   81:         txBitBlt (txDC(), xFon, yFon, 3600, 2400, background);
+     82: 
+     83:         drawSpaceman(spaceman);
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in intptr_t {anonymous}::TX::txPlayVideo(int, int, int, int, const char*, double, double, HWND) at d:\codeblocks\mingw\include\txlib.h (14245):
+
+  14243:                       double zoom /*= 0*/, double gain /*= 1*/, HWND wnd /*= txWindow()*/)
+  14244:     {
+=>14245: $1  if (wnd && wnd == txWindow() && _TX_TXWINDOW_FAILED()) return -1;
+  14246: 
+  14247: $   int time = GetTickCount();  //-V2551
+
+# 1 in intptr_t {anonymous}::TX::txPlayVideo(const char*, double, double, HWND) at d:\codeblocks\mingw\include\txlib.h (14397):
+
+  14395: intptr_t txPlayVideo (const char fileName[], double zoom /*= 0*/, double gain /*= 0*/, HWND wnd /*= txWindow()*/)
+  14396:     {
+=>14397: $1  return txPlayVideo (0, 0, 0, 0, fileName, zoom, gain, wnd);
+  14398:     }
+  14399: 
+
+# 2 in void {anonymous}::TX::_txCleanup() at d:\codeblocks\mingw\include\txlib.h (9082):
+
+   9080: 
+   9081: $   txSpeak     (NULL);
+=> 9082: $   txPlayVideo (NULL);
+   9083: 
+   9084: $   delete _txCanvas_UserDCs;
+
+# 3 in const char* {anonymous}::TX::_txProcessError(const char*, int, const char*, unsigned int, const char*, va_list) at d:\codeblocks\mingw\include\txlib.h (12542):
+
+  12540: 
+  12541:     if (stkTrace && strstr (stkTrace, ".exe: "))
+=>12542:         {$ fprintf (stderr,    "Стек вызовов:\n\n"
+  12543:                                "%s\n\n"
+  12544:                                "--------------------------------------------------\n",
+
+# 4 in int main() at D:\Game-main\main.cpp (81):
+
+     79: 
+     80:         //Рисование
+=>   81:         txBitBlt (txDC(), xFon, yFon, 3600, 2400, background);
+     82: 
+     83:         drawSpaceman(spaceman);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 13 2023 17:17:43, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 13 2023 17:17:50
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x360C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004226F0 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txTransparentBlt() at d:/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0042BCCF in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/платформер/проект платформер/main.cpp (24):
+
+     22:     txClear();
+     23:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   24:     txTransparentBlt (txDC(), 312, y, 50, 50,mario, 0, 0,TX_WHITE);
+     25: 
+     26:               if(GetAsyncKeyState ('W')&&jump<1)
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\codeblocks\mingw\include\txlib.h (13657):
+
+  13655: 
+  13656: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13657: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13658: 
+  13659:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in int main() at D:\платформер\проект платформер\main.cpp (24):
+
+     22:     txClear();
+     23:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   24:     txTransparentBlt (txDC(), 312, y, 50, 50,mario, 0, 0,TX_WHITE);
+     25: 
+     26:               if(GetAsyncKeyState ('W')&&jump<1)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 15 2023 18:26:04, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 15 2023 18:47:32
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 14245, функция: intptr_t {anonymous}::TX::txPlayVideo(int, int, int, int, const char*, double, double, HWND),
+
+Сообщение: Возможно, окно рисования не создано или не в порядке.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdre0, Thread: 0x360C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004267BA in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txPlayVideo() at d:/codeblocks/mingw/include/txlib.h (14245)
+# 1 0x00427969 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txPlayVideo() at d:/codeblocks/mingw/include/txlib.h (14397)
+# 2 0x0040570B in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: _txCleanup() at d:/codeblocks/mingw/include/txlib.h (9082)
+# 3 0x0041ABFE in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: _txProcessError() at d:/codeblocks/mingw/include/txlib.h (12611)
+# 4 0x00410D90 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: _txError() at d:/codeblocks/mingw/include/txlib.h (10906)
+# 5 0x004226F0 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txTransparentBlt() at d:/codeblocks/mingw/include/txlib.h (13657)
+
+# 6 0x0042BCCF in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/платформер/проект платформер/main.cpp (24):
+
+     22:     txClear();
+     23:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   24:     txTransparentBlt (txDC(), 312, y, 50, 50,mario, 0, 0,TX_WHITE);
+     25: 
+     26:               if(GetAsyncKeyState ('W')&&jump<1)
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in intptr_t {anonymous}::TX::txPlayVideo(int, int, int, int, const char*, double, double, HWND) at d:\codeblocks\mingw\include\txlib.h (14245):
+
+  14243:                       double zoom /*= 0*/, double gain /*= 1*/, HWND wnd /*= txWindow()*/)
+  14244:     {
+=>14245: $1  if (wnd && wnd == txWindow() && _TX_TXWINDOW_FAILED()) return -1;
+  14246: 
+  14247: $   int time = GetTickCount();  //-V2551
+
+# 1 in intptr_t {anonymous}::TX::txPlayVideo(const char*, double, double, HWND) at d:\codeblocks\mingw\include\txlib.h (14397):
+
+  14395: intptr_t txPlayVideo (const char fileName[], double zoom /*= 0*/, double gain /*= 0*/, HWND wnd /*= txWindow()*/)
+  14396:     {
+=>14397: $1  return txPlayVideo (0, 0, 0, 0, fileName, zoom, gain, wnd);
+  14398:     }
+  14399: 
+
+# 2 in void {anonymous}::TX::_txCleanup() at d:\codeblocks\mingw\include\txlib.h (9082):
+
+   9080: 
+   9081: $   txSpeak     (NULL);
+=> 9082: $   txPlayVideo (NULL);
+   9083: 
+   9084: $   delete _txCanvas_UserDCs;
+
+# 3 in const char* {anonymous}::TX::_txProcessError(const char*, int, const char*, unsigned int, const char*, va_list) at d:\codeblocks\mingw\include\txlib.h (12542):
+
+  12540: 
+  12541:     if (stkTrace && strstr (stkTrace, ".exe: "))
+=>12542:         {$ fprintf (stderr,    "Стек вызовов:\n\n"
+  12543:                                "%s\n\n"
+  12544:                                "--------------------------------------------------\n",
+
+# 4 in int main() at D:\платформер\проект платформер\main.cpp (24):
+
+     22:     txClear();
+     23:     txBitBlt (txDC(), x, 0, 2901, 450, map1);
+=>   24:     txTransparentBlt (txDC(), 312, y, 50, 50,mario, 0, 0,TX_WHITE);
+     25: 
+     26:               if(GetAsyncKeyState ('W')&&jump<1)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 15 2023 18:26:04, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 15 2023 18:47:33
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x2C98 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004226F0 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txTransparentBlt() at d:/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0042BDC2 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/платформер/проект платформер/main.cpp (32):
+
+     30:     if(i<1)
+     31:     {
+=>   32:     txTransparentBlt (txDC(), 312, y, 50, 50,image_right, 0, 0,TX_WHITE);
+     33:     }
+     34:               if(GetAsyncKeyState ('W')&&jump<1)
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\codeblocks\mingw\include\txlib.h (13657):
+
+  13655: 
+  13656: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13657: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13658: 
+  13659:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in int main() at D:\платформер\проект платформер\main.cpp (32):
+
+     30:     if(i<1)
+     31:     {
+=>   32:     txTransparentBlt (txDC(), 312, y, 50, 50,image_right, 0, 0,TX_WHITE);
+     33:     }
+     34:               if(GetAsyncKeyState ('W')&&jump<1)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 15 2023 18:49:23, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 15 2023 18:49:30
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x33D8 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004226F0 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txTransparentBlt() at d:/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0042BDC2 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/платформер/проект платформер/main.cpp (32):
+
+     30:     if(i<1)
+     31:     {
+=>   32:     txTransparentBlt (txDC(), 312, y, 50, 50,image_right, 0, 0,TX_WHITE);
+     33:     }
+     34:               if(GetAsyncKeyState ('W')&&jump<1)
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\codeblocks\mingw\include\txlib.h (13657):
+
+  13655: 
+  13656: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13657: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13658: 
+  13659:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in int main() at D:\платформер\проект платформер\main.cpp (32):
+
+     30:     if(i<1)
+     31:     {
+=>   32:     txTransparentBlt (txDC(), 312, y, 50, 50,image_right, 0, 0,TX_WHITE);
+     33:     }
+     34:               if(GetAsyncKeyState ('W')&&jump<1)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 17 2023 17:10:11, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 17 2023 17:10:20
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x316C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004226F0 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txTransparentBlt() at d:/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0042BD21 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/платформер/проект платформер/main.cpp (32):
+
+     30:    // if(i<1)
+     31:    //{
+=>   32:    txTransparentBlt (txDC(), 312, y, 50, 50,image_right, 0, 0,TX_WHITE);
+     33:    // }
+     34:               if(GetAsyncKeyState ('W')&&jump<1)
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\codeblocks\mingw\include\txlib.h (13657):
+
+  13655: 
+  13656: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13657: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13658: 
+  13659:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in int main() at D:\платформер\проект платформер\main.cpp (32):
+
+     30:    // if(i<1)
+     31:    //{
+=>   32:    txTransparentBlt (txDC(), 312, y, 50, 50,image_right, 0, 0,TX_WHITE);
+     33:    // }
+     34:               if(GetAsyncKeyState ('W')&&jump<1)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 17 2023 17:11:41, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 17 2023 17:11:50
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x3160 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004226F0 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txTransparentBlt() at d:/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0042BD21 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/платформер/проект платформер/main.cpp (32):
+
+     30:    // if(i<1)
+     31:    //{
+=>   32:    txTransparentBlt (txDC(), 312, y, 50, 50,image_right, 0, 0,TX_WHITE);
+     33:    // }
+     34:               if(GetAsyncKeyState ('W')&&jump<1)
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\codeblocks\mingw\include\txlib.h (13657):
+
+  13655: 
+  13656: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13657: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13658: 
+  13659:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in int main() at D:\платформер\проект платформер\main.cpp (32):
+
+     30:    // if(i<1)
+     31:    //{
+=>   32:    txTransparentBlt (txDC(), 312, y, 50, 50,image_right, 0, 0,TX_WHITE);
+     33:    // }
+     34:               if(GetAsyncKeyState ('W')&&jump<1)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 17 2023 17:12:12, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 17 2023 17:12:22
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x1A78 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004226F0 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txTransparentBlt() at d:/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0042BD21 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/платформер/проект платформер/main.cpp (32):
+
+     30:    // if(i<1)
+     31:    //{
+=>   32:    txTransparentBlt (txDC(), 312, y, 50, 50,image_right, 0, 0,TX_WHITE);
+     33:    // }
+     34:               if(GetAsyncKeyState ('W')&&jump<1)
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\codeblocks\mingw\include\txlib.h (13657):
+
+  13655: 
+  13656: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13657: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13658: 
+  13659:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in int main() at D:\платформер\проект платформер\main.cpp (32):
+
+     30:    // if(i<1)
+     31:    //{
+=>   32:    txTransparentBlt (txDC(), 312, y, 50, 50,image_right, 0, 0,TX_WHITE);
+     33:    // }
+     34:               if(GetAsyncKeyState ('W')&&jump<1)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 17 2023 17:40:24, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 17 2023 17:40:33
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
