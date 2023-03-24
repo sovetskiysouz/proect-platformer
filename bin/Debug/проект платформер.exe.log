@@ -1581,3 +1581,409 @@ Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
 Directory:	D:\платформер\проект платформер
 
 --------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x13AC (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004226F0 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txTransparentBlt() at d:/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0042BD21 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/платформер/проект платформер/main.cpp (29):
+
+     27:     //txTransparentBlt (txDC(), 312, y, 50, 50,image_left, 0, 0,TX_WHITE);
+     28:     //}
+=>   29:  txTransparentBlt (txDC(), 312, y, 50, 50,image_right, 0, 0,TX_WHITE);
+     30:    // if(i<1)
+     31:    //{
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\codeblocks\mingw\include\txlib.h (13657):
+
+  13655: 
+  13656: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13657: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13658: 
+  13659:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in int main() at D:\платформер\проект платформер\main.cpp (29):
+
+     27:     //txTransparentBlt (txDC(), 312, y, 50, 50,image_left, 0, 0,TX_WHITE);
+     28:     //}
+=>   29:  txTransparentBlt (txDC(), 312, y, 50, 50,image_right, 0, 0,TX_WHITE);
+     30:    // if(i<1)
+     31:    //{
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 17 2023 19:44:04, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 17 2023 19:44:11
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x3AF8 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004226F0 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txTransparentBlt() at d:/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0042BD21 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/платформер/проект платформер/main.cpp (29):
+
+     27:     //txTransparentBlt (txDC(), 312, y, 50, 50,image_left, 0, 0,TX_WHITE);
+     28:     //}
+=>   29:  txTransparentBlt (txDC(), 312, y, 50, 50,image_right, 0, 0,TX_WHITE);
+     30:    // if(i<1)
+     31:    //{
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\codeblocks\mingw\include\txlib.h (13657):
+
+  13655: 
+  13656: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13657: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13658: 
+  13659:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in int main() at D:\платформер\проект платформер\main.cpp (29):
+
+     27:     //txTransparentBlt (txDC(), 312, y, 50, 50,image_left, 0, 0,TX_WHITE);
+     28:     //}
+=>   29:  txTransparentBlt (txDC(), 312, y, 50, 50,image_right, 0, 0,TX_WHITE);
+     30:    // if(i<1)
+     31:    //{
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 17 2023 19:46:49, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 17 2023 19:46:55
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0xA2C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004226F0 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txTransparentBlt() at d:/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0042BD21 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/платформер/проект платформер/main.cpp (29):
+
+     27:     //txTransparentBlt (txDC(), 312, y, 50, 50,image_left, 0, 0,TX_WHITE);
+     28:     //}
+=>   29:  txTransparentBlt (txDC(), 312, y, 50, 50,image_right, 0, 0,TX_WHITE);
+     30:    // if(i<1)
+     31:    //{
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\codeblocks\mingw\include\txlib.h (13657):
+
+  13655: 
+  13656: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13657: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13658: 
+  13659:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in int main() at D:\платформер\проект платформер\main.cpp (29):
+
+     27:     //txTransparentBlt (txDC(), 312, y, 50, 50,image_left, 0, 0,TX_WHITE);
+     28:     //}
+=>   29:  txTransparentBlt (txDC(), 312, y, 50, 50,image_right, 0, 0,TX_WHITE);
+     30:    // if(i<1)
+     31:    //{
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 17 2023 19:49:32, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 17 2023 19:49:38
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x3AF4 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004226F0 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txTransparentBlt() at d:/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0042BD21 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/платформер/проект платформер/main.cpp (29):
+
+     27:     //txTransparentBlt (txDC(), 312, y, 50, 50,image_left, 0, 0,TX_WHITE);
+     28:     //}
+=>   29:  txTransparentBlt (txDC(), 312, y, 50, 50,image_right, 0, 0,TX_WHITE);
+     30:    // if(i<1)
+     31:    //{
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\codeblocks\mingw\include\txlib.h (13657):
+
+  13655: 
+  13656: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13657: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13658: 
+  13659:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in int main() at D:\платформер\проект платформер\main.cpp (29):
+
+     27:     //txTransparentBlt (txDC(), 312, y, 50, 50,image_left, 0, 0,TX_WHITE);
+     28:     //}
+=>   29:  txTransparentBlt (txDC(), 312, y, 50, 50,image_right, 0, 0,TX_WHITE);
+     30:    // if(i<1)
+     31:    //{
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 17 2023 19:49:32, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 17 2023 19:50:40
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x28C0 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004226F0 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txTransparentBlt() at d:/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0042BD21 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/платформер/проект платформер/main.cpp (27):
+
+     25: 
+     26: 
+=>   27:  txTransparentBlt (txDC(), 312, y, 50, 50,image_right, 0, 0,TX_WHITE);
+     28: 
+     29:               if(GetAsyncKeyState ('W')&&jump<1)
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\codeblocks\mingw\include\txlib.h (13657):
+
+  13655: 
+  13656: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13657: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13658: 
+  13659:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in int main() at D:\платформер\проект платформер\main.cpp (27):
+
+     25: 
+     26: 
+=>   27:  txTransparentBlt (txDC(), 312, y, 50, 50,image_right, 0, 0,TX_WHITE);
+     28: 
+     29:               if(GetAsyncKeyState ('W')&&jump<1)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 20 2023 16:45:10, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 20 2023 16:45:20
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x3AE4 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004226F0 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txTransparentBlt() at d:/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0042BD21 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/платформер/проект платформер/main.cpp (27):
+
+     25: 
+     26: 
+=>   27:  txTransparentBlt (txDC(), 312, y, 50, 50,image_right, 0, 0,TX_WHITE);
+     28: 
+     29:               if(GetAsyncKeyState ('W')&&jump<1)
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\codeblocks\mingw\include\txlib.h (13657):
+
+  13655: 
+  13656: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13657: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13658: 
+  13659:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in int main() at D:\платформер\проект платформер\main.cpp (27):
+
+     25: 
+     26: 
+=>   27:  txTransparentBlt (txDC(), 312, y, 50, 50,image_right, 0, 0,TX_WHITE);
+     28: 
+     29:               if(GetAsyncKeyState ('W')&&jump<1)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 20 2023 16:46:45, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 20 2023 16:46:53
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\платформер\проект платформер\bin\Debug\проект платформер.exe, файл: d:\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x36FC (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004226F0 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: txTransparentBlt() at d:/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0042BD21 in D:\платформер\проект платформер\bin\Debug\проект платформер.exe: main() at D:/платформер/проект платформер/main.cpp (27):
+
+     25: 
+     26: 
+=>   27:  txTransparentBlt (txDC(), 312, y, 50, 50,image_right, 0, 0,TX_WHITE);
+     28: 
+     29:               if(GetAsyncKeyState ('W')&&jump<1)
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\codeblocks\mingw\include\txlib.h (13657):
+
+  13655: 
+  13656: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13657: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13658: 
+  13659:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in int main() at D:\платформер\проект платформер\main.cpp (27):
+
+     25: 
+     26: 
+=>   27:  txTransparentBlt (txDC(), 312, y, 50, 50,image_right, 0, 0,TX_WHITE);
+     28: 
+     29:               if(GetAsyncKeyState ('W')&&jump<1)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 20 2023 16:47:29, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 20 2023 16:47:40
+
+Run file:	D:\платформер\проект платформер\bin\Debug\проект платформер.exe
+Directory:	D:\платформер\проект платформер
+
+--------------------------------------------------
